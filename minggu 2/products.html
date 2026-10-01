@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans flex flex-col min-h-screen">
+    <header class="bg-white border-b px-6 py-4 flex justify-between items-center shadow-sm">
+        <h1 class="text-xl font-bold text-indigo-600">AdminPanel</h1>
+        <div class="text-sm text-slate-600">Halo, Admin</div>
+    </header>
+
+    <div class="flex flex-1">
+        <aside class="w-64 bg-slate-900 text-slate-300 p-4">
+            <nav class="space-y-2">
+                <a href="dashboard.html" class="block px-4 py-2.5 rounded-lg hover:bg-slate-800 hover:text-white">Dashboard</a>
+                <a href="products.html" class="block px-4 py-2.5 rounded-lg bg-indigo-600 text-white">Products</a>
+                <a href="#" class="block px-4 py-2.5 rounded-lg hover:bg-slate-800 hover:text-white">Users</a>
+                <a href="#" class="block px-4 py-2.5 rounded-lg hover:bg-slate-800 hover:text-white">Settings</a>
+                <a href="index.html" class="block px-4 py-2.5 rounded-lg bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white mt-8 transition">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-slate-800">Manajemen Produk</h2>
+                <a href="add-produk.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Add Product</a>
+            </div>
+
+            <div class="bg-white rounded-xl border shadow-sm overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-100 text-slate-600 text-sm">
+                        <tr>
+                            <th class="p-4 border-b">No</th>
+                            <th class="p-4 border-b">Name</th>
+                            <th class="p-4 border-b">Stock</th>
+                            <th class="p-4 border-b">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y text-slate-700">
+                        <tr>
+                            <td class="p-4">1</td>
+                            <td class="p-4 font-medium">Laptop Gaming</td>
+                            <td class="p-4">15</td>
+                            <td class="p-4 space-x-2">
+                                <a href="edit-produk.html" class="text-indigo-600 hover:underline font-medium">Edit</a>
+                                <button class="text-red-600 hover:underline font-medium">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4">2</td>
+                            <td class="p-4 font-medium">Mouse Wireless</td>
+                            <td class="p-4">50</td>
+                            <td class="p-4 space-x-2">
+                                <a href="edit-produk.html" class="text-indigo-600 hover:underline font-medium">Edit</a>
+                                <button class="text-red-600 hover:underline font-medium">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-white border-t p-4 text-center text-sm text-slate-500">
+        &copy; 2026 Admin Panel. All rights reserved.
+    </footer>
+</body>
+</html>
